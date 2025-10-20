@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 // --- Configuration ---
 // The API Key is still a placeholder.
 // In a real-world app, ensure process.env.GOOGLE_API_KEY is set.
-const API_KEY = process.env.GOOGLE_API_KEY || 'AIzaSyDbwrUaG5yBIZvLGeXoNY2mBA7YAZpdUH4';
+const API_KEY = process.env.GOOGLE_API_KEY ||';
 
 // Initialize Gemini AI
 const genAI = new GoogleGenerativeAI(API_KEY);
@@ -164,3 +164,4 @@ app.get('/logout', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
