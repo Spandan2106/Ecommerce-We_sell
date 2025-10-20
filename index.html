@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>We_sell.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Translate -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,fr,de,it,pt,ru,ja,ko,zh-CN,ar,hi,bn',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="flex justify-between items-center flex-wrap">
+            <a href="#" class="flex items-center space-x-2 mb-2 md:mb-0">
+                <h3 class="text-lg font-bold text-purple-800">We_sell.com</h3>
+            </a>
+            <ul class="flex space-x-4 text-purple-800 font-semibold flex-wrap">
+                <li><a href="Faq.html">FAQ?</a></li>
+                <li><a href="myOrders.html">Your orders</a></li>
+                <li><a href="cart_item.html" id="cartLink">My Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="forgot.html">Forgot Password</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+            <div class="flex items-center space-x-2">
+                <button id="translateBtn" class="btn btn-outline-primary">Translate</button>
+                <select id="languageSelect" class="form-select" aria-label="Select language">
+                    <option value="">Choose language</option>
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="it">Italian</option>
+                    <option value="pt">Portuguese</option>
+                    <option value="ru">Russian</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="zh-CN">Chinese (Simplified)</option>
+                    <option value="ar">Arabic</option>
+                    <option value="hi">Hindi</option>
+                    <option value="ben">Bengali</option>
+                </select>
+                <div id="google_translate_element"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to We_sell.com</h1>
+        <p>Discover the best products and enjoy a seamless shopping experience.</p>
+        <p>Find everything you need in one place!</p>
+        <p>Go buy and pay</p>
+        <a href="https://www.flipkart.com/" class="btn btn-primary">Shop Now(link 1)</a>
+        <a href="https://www.amazon.in/" class="btn btn-primary">Shop Now(link 2)</a>
+        <a href="https://www.bigbasket.com/?utm_source=google&utm_medium=cpc&utm_campaign=Brand-PAN-Jan25&gad_source=1&gad_campaignid=22175835974&gbraid=0AAAAA91V9orUey_XPLPZRLip06ZO199OO&gclid=CjwKCAjwu9fHBhAWEiwAzGRC_yyh5w2-QrOonY5pdByCBVijSoVJL_KKeK2w4YYUlLkB-QhGWYIpPhoCg98QAvD_BwE" class="btn btn-primary">Shop Now(link 3)</a>
+        <a href="https://blinkit.com/?srsltid=AfmBOor7dnfXI3_gsPUz-vFI9rLoDkRlVDtV0I2OFUTc9fS4V_q2nCXJ" class="btn btn-primary">Shop Now(link 4)</a>
+    </section>
+
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <a href="https://www.flipkart.com/search?q=men&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="category-item">
+                <img loading="lazy"
+                    src="https://media.geeksforgeeks.org/wp-content/uploads/20250724124356374694/male_1.jpg"
+                    alt="Men's Category">
+                <h3>Men's Wear</h3>
+                <p>Explore our wide range of men's fashion.</p>
+            </a>
+            <a href="https://www.flipkart.com/search?q=women&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="category-item">
+                <img loading="lazy"
+                    src="https://media.geeksforgeeks.org/wp-content/uploads/20250724125020503946/women_5.jpg"
+                    alt="Women's Category">
+                <h3>Women's Wear</h3>
+                <p>Discover the latest women's fashion trends.</p>
+            </a>
+            <a href="https://www.flipkart.com/search?q=kids&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="category-item">
+                <img loading="lazy"
+                    src="https://images.squarespace-cdn.com/content/v1/5b7c56e255b02c683659fe43/060970be-cb93-4867-9543-db9796a04020/GettyImages-671260408.jpg"
+                    alt="Kids' Category">
+                <h3>Kids' Wear</h3>
+                <p>Find adorable and comfortable clothing for kids.</p>
+            </a>
+            <a href="https://www.flipkart.com/search?q=wedding&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="category-item">
+                <img loading="lazy"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD3QRQcphmg4IRnIy3URPDY70wjk7dkYLPCw&s.jpg"
+                    alt="Ceremony Category">
+                <h3>ceremony Catagory</h3>
+                <p>Find stylish and comfortable options for weddings,rituals etc.</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Others</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <a href="https://www.flipkart.com/search?q=mobiles&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_5_0_na_na_na&otracker1=AS_Query_TrendingAutoSuggest_5_0_na_na_na&as-pos=5&as-type=TRENDING&suggestionId=mobiles&requestId=3de544e2-cc01-4733-95dd-62a0d7dd20da" class="category-item">
+                <img loading="lazy" src="https://images.philips.com/is/image/philipsconsumer/f11c3bb618c747b9a726b1be001e23ba?$pnglarge$&wid=1250" alt="Phones">
+                <h3>Phones</h3>
+                <p>Latest smartphones and accessories.</p>
+            </a>
+            <a href="https://www.flipkart.com/search?q=electronics&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="category-item">
+                <img loading="lazy" src="https://t4.ftcdn.net/jpg/03/64/41/07/360_F_364410756_Ev3WoDfNyxO9c9n4tYIsU5YBQWAP3UF8.jpg" alt="Electronics">
+                <h3>Electronics</h3>
+                <p>Gadgets and electronic devices.</p>
+            </a>
+            <a href="https://www.flipkart.com/search?q=food+items&sid=eat%2Cltb&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_4_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_4_na_na_na&as-pos=2&as-type=RECENT&suggestionId=food+items%7CDry+Fruit%2C+Nut+%26+Seed&requestId=de7384ab-4ac7-4c28-a7c1-a421992818a8&as-searchtext=food" class="category-item">
+                <img loading="lazy" src"https://images.unsplash.com/photo-1695924428716-0b09d79add5c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW1lcmljYW4lMjBmb29kfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000.jpg" alt="Food">
+                <h3>Food</h3>
+                <p>Delicious food items and groceries.</p>
+            </a>
+            <a href="https://www.flipkart.com/search?q=books&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&as-pos=1&as-type=HISTORY" class="category-item">
+                <img loading="lazy" src="https://media.gettyimages.com/id/157482029/photo/stack-of-books.jpg?s=612x612&w=gi&k=20&c=_Yaofm8sZLZkKs1eMkv-zhk8K4k5u0g0fJuQrReWfdQ=" alt="Books">
+                <h3>Books</h3>
+                <p>Wide range of books and literature.</p>
+            </a>
+            <a href="https://www.flipkart.com/search?q=watches&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="category-item">
+                <img loading="lazy" src="https://m.media-amazon.com/images/I/61n0aVXta7L._AC_UY1000_.jpg" alt="Watches">
+                <h3>Watches</h3>
+                <p>Stylish watches for every occasion.</p>
+            </a>
+            <a href="https://www.flipkart.com/" class="category-item">
+                <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ58IzDe08VO7RLoYa3e_XEyeFay6ndmsRBSg&s" alt="others">
+                <h3>click for other items</h3>
+            </a>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Websites</h2>
+        <div class="logo-slider">
+            <a href="https://www.flipkart.com/" target="_blank" rel="noopener noreferrer" class="logo-link">
+                <img src="https://logos-world.net/wp-content/uploads/2020/11/Flipkart-Logo.png" alt="Flipkart" class="logo">
+            </a>
+            <a href="https://www.amazon.in/" target="_blank" rel="noopener noreferrer" class="logo-link">
+                <img src="https://www.shutterstock.com/image-vector/amazon-logo-editorial-icon-isolated-600nw-2333488123.jpg" alt="Amazon" class="logo">
+            </a>
+            <a href="https://www.bigbasket.com/" target="_blank" rel="noopener noreferrer" class="logo-link">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr3xOZrREto9WNjqxVOjZy4D7m7ByimftjKg&s" alt="BigBasket" class="logo">
+            </a>
+            <a href="https://blinkit.com/" target="_blank" rel="noopener noreferrer" class="logo-link">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbp-C1-hpTvVKe-9sqWQt8OivDdObwn7TLPw&s" alt="Blinkit" class="logo">
+            </a>
+            <a href="https://www.jiomart.com/" target="_blank" rel="noopener noreferrer" class="logo-link">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/54/JioMart_logo.svg/1200px-JioMart_logo.svg.png" alt="Blinkit" class="logo">
+            </a>
+            <a href="https://www.ebay.com/" target="_blank" rel="noopener noreferrer" class="logo-link">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV6oAOcwKY0v2Qh1XHTl-4Kxdm7Rsskx6MFA&s" alt="Blinkit" class="logo">
+            </a>
+            <a href="https://www.walmart.com/" target="_blank" rel="noopener noreferrer" class="logo-link">
+                <img src="https://media.designrush.com/inspirations/765750/conversions/1-preview.jpg" alt="Blinkit" class="logo">
+            </a>
+            <a href="https://www.alibaba.com/" target="_blank" rel="noopener noreferrer" class="logo-link">
+                <img src="https://images.seeklogo.com/logo-png/0/1/alibaba-com-logo-png_seeklogo-6545.png" alt="Blinkit" class="logo">
+            </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="products-container">
+            <!-- Products will be loaded dynamically -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 We_sell.com. All rights reserved.</p>
+        <p>thank You for visiting</p>
+    </footer>
+
+    <!-- Chatbot -->
+    <button class="chatbot-btn" id="chatbotBtn">💬</button>
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <h4>AI Chatbot</h4>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <p>Welcome! How can I help you today?</p>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Type your message..." />
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        const API_BASE = 'http://localhost:3000/api';
+
+        async function fetchProducts() {
+            try {
+                const response = await fetch(`${API_BASE}/products`);
+                const products = await response.json();
+                renderProducts(products);
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        }
+
+        function renderProducts(products) {
+            const container = document.getElementById('products-container');
+            container.innerHTML = '';
+            products.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.className = 'product-item';
+                productDiv.id = product.id;
+                productDiv.innerHTML = `
+                    <img loading="lazy" src="${product.image}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p>Description: ${product.description}</p>
+                    <div>
+                        <p class="Discount">${product.discount}</p>
+                        <div class="flex justify-between items-center">
+                            <span class="price">${product.price}</span>
+                            <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(productDiv);
+            });
+            // Attach event listeners after rendering
+            attachCartListeners();
+        }
+
+        async function addToCart(product) {
+            try {
+                const response = await fetch(`${API_BASE}/cart`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(product)
+                });
+                const result = await response.json();
+                alert(result.message);
+                updateCartCount();
+            } catch (error) {
+                console.error('Error adding to cart:', error);
+            }
+        }
+
+        async function updateCartCount() {
+            try {
+                const response = await fetch(`${API_BASE}/cart`);
+                const cart = await response.json();
+                const cartCount = cart.length;
+                const cartLink = document.querySelector('#cartLink');
+                if (cartLink) {
+                    cartLink.innerText = `My Cart (${cartCount})`;
+                }
+            } catch (error) {
+                console.error('Error updating cart count:', error);
+            }
+        }
+
+        function attachCartListeners() {
+            document.querySelectorAll('.add-to-cart-btn').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const productCard = btn.closest('.product-item');
+                    const product = {
+                        id: productCard.id,
+                        name: productCard.querySelector('h3').innerText,
+                        price: productCard.querySelector('.price').innerText,
+                        image: productCard.querySelector('img').src
+                    };
+                    addToCart(product);
+                });
+            });
+        }
+
+        // Initialize
+        fetchProducts();
+        updateCartCount();
+
+        // Chatbot functionality
+        const chatbotBtn = document.getElementById('chatbotBtn');
+        const chatWindow = document.getElementById('chatWindow');
+        const chatInput = document.getElementById('chatInput');
+        const chatMessages = document.getElementById('chatMessages');
+
+        chatbotBtn.addEventListener('click', () => {
+            chatWindow.style.display = chatWindow.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        chatInput.addEventListener('keypress', async (e) => {
+            if (e.key === 'Enter') {
+                const message = chatInput.value.trim();
+                if (message) {
+                    addMessage('You: ' + message);
+                    chatInput.value = '';
+                    try {
+                        const response = await fetch(`${API_BASE}/chat`, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ message })
+                        });
+                        const data = await response.json();
+                        addMessage('Bot: ' + data.response);
+                    } catch (error) {
+                        console.error('Error sending message:', error);
+                        addMessage('Bot: Sorry, I am unable to respond right now.');
+                    }
+                }
+            }
+        });
+
+        function addMessage(message) {
+            const messageElement = document.createElement('p');
+            messageElement.textContent = message;
+            chatMessages.appendChild(messageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Translation functionality
+        (function () {
+            const translateBtn = document.getElementById('translateBtn');
+            const languageSelect = document.getElementById('languageSelect');
+
+            function setCookie(name, value, days) {
+                let expires = '';
+                if (days) {
+                    const d = new Date();
+                    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = ';expires=' + d.toUTCString();
+                }
+                // write cookie for current domain and path
+                document.cookie = name + '=' + encodeURIComponent(value) + expires + ';path=/';
+            }
+
+            function getCookie(name) {
+                const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+                return match ? decodeURIComponent(match[2]) : null;
+            }
+
+            translateBtn.addEventListener('click', () => {
+                languageSelect.style.display = languageSelect.style.display === 'none' ? 'inline-block' : 'none';
+                languageSelect.focus();
+            });
+
+            languageSelect.addEventListener('change', () => {
+                const lang = languageSelect.value;
+                if (!lang) return;
+
+                // Google Translate expects cookie value like "/from/to" — here source is 'en'
+                const from = 'en';
+                const cookieVal = `/${from}/${lang}`;
+
+                // Set googtrans cookie and reload so the widget applies translation
+                try {
+                    setCookie('googtrans', cookieVal, 1);
+                    // Some environments also look for a cookie set at root domain; attempt to set without domain explicitly
+                    // Reload to apply translation
+                    location.reload();
+                } catch (e) {
+                    console.error('Could not set translation cookie:', e);
+                    alert('Translation not available in this environment.');
+                }
+            });
+
+            // Optional: reflect currently selected language (if cookie exists)
+            try {
+                const current = getCookie('googtrans');
+                if (current) {
+                    const parts = current.split('/');
+                    if (parts.length >= 3) {
+                        const toLang = parts[2];
+                        const opt = Array.from(languageSelect.options).find(o => o.value === toLang);
+                        if (opt) languageSelect.value = toLang;
+                    }
+                }
+            } catch (e) {
+                /* ignore */
+            }
+        })();
+    </script>
+</body>
+
+</html>
